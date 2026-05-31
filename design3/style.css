@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Game Of Squids';
+    src: url(./Game\ Of\ Squids.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle at 85% 15%, rgba(73, 26, 112, 0.45) 0%, transparent 40%), radial-gradient(circle at 10% 70%, rgba(122, 20, 50, 0.4) 0%, transparent 50%), #0f0c13;
+    font-family: 'Game Of Squids', sans-serif;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+nav img{
+    height: 4rem;
+    width: auto;
+    object-fit: contain;
+}
+
+nav .nav-links{
+    display: flex;
+    gap: 2rem;
+}
+nav .nav-links a{
+    text-decoration: none;
+    color: #e07796;
+    transition: color ease 0.3s;
+}
+nav .nav-links a:hover{
+    text-decoration: underline #ff5733;
+    text-underline-offset: 0.6rem;
+    color: #ffffff
+}
+
+.menu-bars{
+    height: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 2rem;
+    gap: 1%;
+}
+
+.menu-bars .menu-line{
+    height:15%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+.menu-bars .menu-line1{
+    height:15%;
+    width: 60%;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.center-section{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+    width: 90%;
+}
+
+.logo-area{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3%;
+}
+
+.logo-area p{
+    font-size: small;
+    color: #ffffff;
+    align-self: bottom;
+}
+
+.logo-area img{
+    height: auto;
+    width: 35%;
+    aspect-ratio: 1/1;
+}
+
+.play-btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.play-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-btn button i {
+  font-size: 20px;
+}
+
+.play-btn button:first-child {
+  background: linear-gradient(to right, #d92055, #e26a23);
+  border: none;
+}
+
+.play-btn button:first-child:hover {
+  transform: translateY(-2px);
+}
+
+.play-btn button:last-child {
+  background: transparent;
+  border: 1px solid #b52254;
+}
+
+.play-btn button:last-child:hover {
+  transform: translateY(-2px);
+}
+
+.play-section{
+    height: 40%;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scrolls{
+    display: flex;
+    writing-mode: sideways-lr;
+    align-items: center;
+    gap: 4px;
+    align-self: center;
+}
+
+.scrolls span{
+    color: white;
+}
+.scrolls hr{
+    height: 5rem;
+    width:1px;
+    background-color: #9c274b;
+    border: none;
+}
+
+.img-cont img{
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    font-size: large;
+    color: #d92055;
+}
+
+.play-section {
+  width: 90%;
+  display: flex;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 100px;
+  border-radius: 20px;
+}
+
+.video {
+  position: relative;
+  flex: 1;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.video:hover {
+  transform: translateY(-5px); 
+}
+
+.video img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.video-play-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-play-btn i {
+  color: #ffffff;
+  font-size: 18px;
+  margin-left: 2px; /* Nudges the play triangle slightly right so it looks optically centered */
+}
